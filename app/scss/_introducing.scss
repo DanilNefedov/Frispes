@@ -1,0 +1,156 @@
+.main{
+	padding-bottom: 112px;
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+}
+
+.caption{
+
+	&__item{
+		font-size: 20px;
+		line-height: 30px;
+		align-content: center;
+
+		&:after{
+			content:'';
+			display: inline-block;
+			width: 73px;
+			height:2px;
+			background-color: $font_color;
+			margin-left: 15px;
+			vertical-align: middle;
+		}
+	}
+}
+.title{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 8px;
+
+	&__head{
+		font-family: Lora;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 52px;
+		line-height: 67px;
+		min-width: 667px;
+		color:$blue;
+
+		&--color{
+			color:$red;
+		}
+	}
+	&__sub{
+		font-size: 20px;
+		line-height: 30px;
+		color:$font_subtitle;
+		padding-left: 61px;
+	}
+}
+
+.find{
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+
+	img{
+		display: block;
+	}
+
+	.pagination{
+		position: absolute;
+		bottom: 57px;
+		right:450px;
+
+
+		span{
+			display: inline-block;
+			width: 16px;
+			height: 4px;
+			background-color: $white;
+			opacity: .5;
+			transition: .3s;
+
+			&:hover{
+				background-color: $font-orange;
+				opacity: 1;
+				transform: scaleX(2.3);
+				margin: 0 9px;
+			}
+		}
+	}
+}
+
+.find-form{
+	position: absolute;
+	top: 304px;
+	left: 10px;
+	max-width: 465px;
+	margin: 0;
+	background-color: $blue;
+	color:$white;
+	z-index: 1;
+
+	h3{
+		font-family: Lora;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 34px;
+		line-height: 44px;
+		padding: 42px 72px 29px 40px;
+	}
+	button{
+		background-color: $font_orange;
+		padding: 12.5px 114px;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 28px;
+		color:$white;
+		margin: 5px 42px 31px;
+		cursor: pointer;
+		transition: .3s;
+
+		&:hover{
+			background-color: $white;
+			color:$font_orange;
+		}
+	}
+}
+.form{
+	padding: 0 0 0 40px;
+	&__item{
+		max-width: 365px;
+		background-color: $dark_blue;
+		margin: 0 0 17px 0;
+		position: relative;
+
+		&:after{
+			content: '';
+			background: url(../images/dest/arr-bot-white.svg) 100% 100% no-repeat;
+			display: block;
+			width: 12px;
+			height: 8px;
+			position: absolute;
+			right: 31px;
+			bottom: 25px;
+
+		}
+
+		&--subtitle{
+			color:$white;
+			opacity: 0.35;
+			line-height: 26px;
+			padding: 0 0 0 16px;
+		}
+		&--choice{
+			line-height: 26px;
+			padding: 0 0 8px 16px;
+		}
+	}
+}
